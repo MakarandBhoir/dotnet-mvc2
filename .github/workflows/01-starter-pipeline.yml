@@ -1,0 +1,18 @@
+name: 01-Starter-Action
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello
+        run: echo "Hello GitHub Action" 
+        
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+
+
