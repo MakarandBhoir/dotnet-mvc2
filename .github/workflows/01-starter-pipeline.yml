@@ -13,6 +13,6 @@ jobs:
         run: echo "Hello GitHub Action" 
         
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build "dotnet-mvc2/dotnet-mvc2.csproj" --configuration Release
 
 
